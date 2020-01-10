@@ -16,3 +16,14 @@ msg = 'The code is still running!'
 # Credentials (if needed)  
 username = 'username'  
 password = 'password'  
+
+# The actual mail send  
+server = smtplib.SMTP('smtp.gmail.com:587')  
+server.starttls()  
+server.login(username,password)  
+server.sendmail(fromaddr, toaddrs, msg)  
+server.quit()  
+
+"""
+# Import smtplib for the actual sending function
+import smtplib
