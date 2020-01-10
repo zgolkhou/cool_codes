@@ -27,3 +27,6 @@ server.quit()
 """
 # Import smtplib for the actual sending function
 import smtplib
+# Import the email modules we'll need
+from email.mime.text import MIMEText
+
