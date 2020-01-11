@@ -109,3 +109,7 @@ if __name__ == "__main__":
             flake = get_random_flake()
             snowflakes[col] = [1, flake]
 
+
+            print("\033[%s;%sH%s" % (snowflakes[col][0], col,
+                    snowflakes[col][1]))
+ 
