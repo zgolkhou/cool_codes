@@ -115,3 +115,7 @@ if __name__ == "__main__":
  
         # key any flakes on the screen moving
 
+        for flake in snowflakes.keys():
+            move_flake(flake)
+ 
+        time.sleep(0.1)
