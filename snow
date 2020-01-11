@@ -65,3 +65,20 @@ def clear_screen(numlines=100):
         # Fallback for other operating systems.
         print('\n' * rows)
  
+def get_random_flake():
+    if not platform.system() == 'Windows':
+        try:
+            # python3 support
+            try:
+                cmd = unichr
+            except NameError:
+                cmd = chr
+ 
+            flake = cmd(random.choice(range(0x2740, 0x2749)))
+ 
+            return flake
+        except:
+            pass
+ 
+    return " *"
+ 
