@@ -94,4 +94,10 @@ def get_random_flake():
  
         print("\033[1;1H")
  
-
+if __name__ == "__main__":
+ 
+    clear_screen()
+ 
+    while True:
+        col = random.choice(range(1, int(columns)))
+ 
