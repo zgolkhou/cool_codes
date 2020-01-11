@@ -101,3 +101,11 @@ if __name__ == "__main__":
     while True:
         col = random.choice(range(1, int(columns)))
  
+         # its already on the screen, move it
+        if col in snowflakes.keys():
+            move_flake(col)
+        else:
+        # otherwise put it on the screen
+            flake = get_random_flake()
+            snowflakes[col] = [1, flake]
+
