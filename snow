@@ -113,3 +113,5 @@ if __name__ == "__main__":
             print("\033[%s;%sH%s" % (snowflakes[col][0], col,
                     snowflakes[col][1]))
  
+        # key any flakes on the screen moving
+
