@@ -14,7 +14,7 @@ import platform
 snowflakes = {}
  
 try:
-    # Windows Support
+    ## Windows Support
     from colorama import init
     init()
 except ImportError:
