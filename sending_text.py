@@ -3,6 +3,8 @@
 Created on Thu Jun 13 16:12:24 2013
 
 @author: Zach
+
+please modify the message as you wish.
 """
 
 import smtplib
